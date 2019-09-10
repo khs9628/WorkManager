@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white"
+        android:paddingHorizontal="20dp">
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="315dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/img_schedule_10" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n"
+            android:textSize="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="100dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp">
+
+            <EditText
+                android:id="@+id/addschedule"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="20"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:paddingHorizontal="5dp"
+                android:hint="추가하고 싶은 일정의 날짜와 일정 내용을 기입"
+                android:background="@drawable/bg_black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="\n"
+                android:background="@android:color/white"/>
+            <Button
+                android:id="@+id/requestAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/bg_button_yellow"
+                android:text="추가 요청"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="3dp"
+                android:text="\n"
+                android:background="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

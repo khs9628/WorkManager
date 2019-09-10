@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviseInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"
+            android:text="개인정보 수정"
+            android:paddingVertical="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="160dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:gravity="left"
+                    android:text="이름"
+                    android:textSize="15dp"/>
+                <EditText
+                    android:id="@+id/newName"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:background="@drawable/bg_black"
+                    android:paddingVertical="5dp"/>
+
+                <Button
+                    android:id="@+id/reviseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/bg_button_yellow"
+                    android:paddingHorizontal="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:text="수정"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:gravity="left"
+                    android:text="아이디"
+                    android:textSize="15dp"/>
+                <EditText
+                    android:id="@+id/newId"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:hint="휴대전화 번호"
+                    android:textSize="14dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:background="@drawable/bg_black"
+                    android:paddingVertical="5dp"/>
+                <Button
+                    android:id="@+id/checkId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/bg_button_yellow"
+                    android:paddingHorizontal="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:text="중복확인"
+                    android:textSize="10dp"/>
+                <Button
+                    android:id="@+id/reviseId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/bg_button_yellow"
+                    android:paddingHorizontal="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:text="수정"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:gravity="left"
+                    android:text="이메일"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/newEmail"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:background="@drawable/bg_black"
+                    android:paddingVertical="5dp"/>
+
+                <Button
+                    android:id="@+id/reviseEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/bg_button_yellow"
+                    android:paddingHorizontal="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:text="수정"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:text="비밀번호"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/newPw1"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="8~16자, 영어 대소문자, 숫자 사용 가능"
+                android:textSize="12dp"
+                android:textColor="@android:color/darker_gray"
+                android:background="@drawable/bg_black"
+                android:paddingVertical="7dp"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="100dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:gravity="left"
+                    android:text="비밀번호확인"
+                    android:textSize="14dp"/>
+                <EditText
+                    android:id="@+id/newPw2"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:background="@drawable/bg_black"
+                    android:paddingVertical="5dp"/>
+
+                <Button
+                    android:id="@+id/revisePw"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/bg_button_yellow"
+                    android:paddingHorizontal="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:text="수정"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/finish"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_button_yellow"
+                    android:paddingVertical="10dp"
+                    android:textStyle="bold"
+                    android:text="완 료"
+                    android:textSize="20dp" /> >
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

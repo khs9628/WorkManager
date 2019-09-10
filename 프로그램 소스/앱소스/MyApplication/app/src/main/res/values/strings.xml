@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">WORK MANAGER</string>
+    <string name="title_home">홈</string>
+    <string name="title_myPage">마이페이지</string>
+    <string name="title_workRecord">근무기록조회</string>
+    <string name="title_schedule">공지사항</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_tabItem1_WorkRecord">기간별근무기록</string>
+    <string name="title_tabItem2_WorkRecord">예상급여계산</string>
+
+    <string name="title_tabItem1_Schedule">수정 요청</string>
+    <string name="title_tabItem2_Schedule">공지 사항</string>
+
+    <string name="title_tabItem1_MyPage">근무지 정보</string>
+    <string name="title_tabItem2_MyPage">개인정보 수정</string>
+
+    <string name="title_tabItem1_home">메인페이지</string>
+    <string name="title_tabItem2_home">로그인</string>
+
+    <string name="title_activity_by_period_result">기간별 근무 기록</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

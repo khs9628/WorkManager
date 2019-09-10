@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.seunghyun.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:paddingTop="20dp"
+        >
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wm"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WORK"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MANEGER"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="30dp">
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="휴대전화번호 입력"
+                android:inputType="phone"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/userPw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호 입력"
+                android:inputType="textPassword"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginHorizontal="20dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingHorizontal="100dp"
+            android:background="@drawable/bg_button_yellow"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="70dp"
+            android:paddingVertical="15dp">
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="회원가입"
+                android:textSize="15dp"
+                android:background="#FFFFFF"/>
+            <Button
+                android:id="@+id/findPw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="비밀번호찾기"
+                android:textSize="15dp"
+                android:background="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

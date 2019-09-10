@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviseRecordFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:background="#EEEEEE">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:text="요청 사항을 선택하세요."
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="7dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="근무 기록 수정"/>
+                <RadioButton
+                    android:id="@+id/calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="일정 수정 요청"
+                    android:layout_marginLeft="40dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="\n"
+                android:textSize="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_gravity="left"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="날 짜"/>
+
+                <EditText
+                    android:id="@+id/revisedate"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:hint="201X/00/00"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_gravity="left"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="출근 시간"/>
+
+                <EditText
+                    android:id="@+id/stime"
+                    android:inputType="time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:hint="00:00"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_gravity="left"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="퇴근 시간"/>
+
+                <EditText
+                    android:id="@+id/etime"
+                    android:inputType="time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:hint="00:00"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_black"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="\n"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:layout_gravity="left"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:text="사유 입력"/>
+
+            <EditText
+                android:id="@+id/content"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="20"
+                android:scrollbars="vertical"
+                android:layout_width="320dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/bg_black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="\n"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#EEEEEE"
+             android:paddingHorizontal="50dp"
+             android:paddingTop="30dp"
+             android:paddingBottom="10dp">
+             <Button
+                 android:id="@+id/requestRevise"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:gravity="center"
+                 android:background="@drawable/bg_button_yellow"
+                 android:text="수 정 요 청"
+                 android:textSize="18dp"/>
+
+         </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

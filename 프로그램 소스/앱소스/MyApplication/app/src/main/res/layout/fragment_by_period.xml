@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.seunghyun.myapplication.ByPeriodFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#EEEEEE"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_yellow_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="조회기간을 입력해주세요"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n"
+                android:textSize="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:text="조회기간"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_black"
+                    android:gravity="center"
+                    android:hint="201X/00/00"
+                    android:inputType="datetime"
+                    android:paddingVertical="5dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:text="   부터"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+                <EditText
+                    android:id="@+id/end_date"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_black"
+                    android:gravity="center"
+                    android:hint="201X/00/00"
+                    android:inputType="datetime"
+                    android:paddingVertical="5dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="   까지"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_button_yellow"
+                android:text="확 인" />
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n"
+                android:textSize="5dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"></LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

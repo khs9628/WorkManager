@@ -1,0 +1,26 @@
+
+<Context>
+<Resource 
+
+   name="Workmanager"
+
+   auth="Container" 
+
+   driverClassName="oracle.jdbc.driver.OracleDriver" 
+
+   type="javax.sql.DataSource" 
+
+   url="jdbc:oracle:thin:@127.0.0.1:1521:XE" 
+
+   username="system"
+
+   password="1198" 
+
+   maxActive="20" 
+
+   maxIdle="10" 
+
+   maxWait="-1"  />
+
+
+</Context>

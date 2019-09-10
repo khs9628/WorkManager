@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.seunghyun.myapplication">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_wm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_wm_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WorkRecordActivity" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MyPageActivity" />
+        <activity android:name=".SignActivity" />
+        <activity android:name=".FindPwActivity" />
+        <activity
+            android:name=".ByPeriodResultActivity"
+            android:label="@string/title_activity_by_period_result"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ReviseInfoActivity" />
+        <activity android:name=".LoginActivity" />
+
+        <service
+            android:name=".CardService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE">
+
+            <!-- Intent filter indicating that we support card emulation. -->
+            -
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!--
+                 Required XML configuration file, listing the AIDs that we are emulating cards
+                 for. This defines what protocols our card emulation service supports.
+            -->
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/aid_list" />
+        </service>
+
+
+    </application>
+
+</manifest>
