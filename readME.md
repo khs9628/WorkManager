@@ -1,8 +1,6 @@
 # WorkManager
 근태 관리 시스템 프로젝트 파일입니다.
 
-![LOGO](프로그램 소스/웹소스/WorkManager/WebContent/bootstrap/img/logo.PNG)
-
  ## 프로젝트
     프로젝트 이름 : WORK MANAGER 
     사용언어 = WEB : JSP
